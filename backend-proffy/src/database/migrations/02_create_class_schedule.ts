@@ -2,16 +2,17 @@ import Knex from 'knex';
 
 // Alterações que deverão ser realizadas no banco de dados.
 export async function up(knex: Knex) {
-  return knex.schema.createTable('classes', (table) => {
+  return knex.schema.createTable('class_schedule', (table) => {
     table.increments('id').primary();
-    table.string('subject').notNullable();
-    table.decimal('cost').notNullable();
+    table.integer('week_day').notNullable();
+    table.integer('from').notNullable();
+    table.integer('to').notNullable();
 
     // Relacionamento de tabela
-    table.integer('user_id')
+    table.integer('class_id')
       .notNullable()
       .references('id')
-      .inTable('users')
+      .inTable('classes')
       .onUpdate('CASCADE') // SE ALTERAR O ID DO USUÁRIO, REFLETIRÁ EM TODO DB
       .onDelete('CASCADE'); // DELETARÁ TODA A ÁRVORE LIGADA A ESTE USUÁRIO
   });
@@ -19,5 +20,5 @@ export async function up(knex: Knex) {
 
 // Rollback das alterações.
 export async function down(knex: Knex) {
-  return knex.schema.dropTable('classes');
+  return knex.schema.dropTable('class_schedule');
 }
