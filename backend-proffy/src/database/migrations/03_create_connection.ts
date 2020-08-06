@@ -14,7 +14,7 @@ export async function up(knex: Knex) {
       .onDelete('CASCADE'); // DELETARÁ TODA A ÁRVORE LIGADA A ESTE USUÁRIO
 
     table.timestamp('created_at')
-      .defaultTo('now()')
+      .defaultTo(knex.raw('CURRENT_TIMESTAMP'))
       .notNullable();
   });
 }
