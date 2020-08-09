@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
     color: '#D4C2FF',
     fontSize: 14,
     lineHeight: 20,
-    maxWidth: 140,
+    alignSelf: 'flex-end',
     marginTop: 40
   }
 });
