@@ -14,9 +14,9 @@
 
 <br>
 
-<!-- <p align="center">
-   <img alt="ecoleta-web" title="#ecoletaWeb" src="frontend-ecoleta/git-files/ecoleta.png"  />
-</p> -->
+<p align="center">
+   <img alt="proffy-web" title="#proffyWeb" src="github-files/img/proffy.png"  />
+</p>
 
 ## :rocket: Tecnologias
 
@@ -31,18 +31,43 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-O Proffy é uma plataforma de estudos online.
+O Proffy é uma plataforma de estudos online com a finalidade de conectar professores e estudantes. O meio de comunicação é através da integração da aplicação com o WhatsApp.
 
-<!-- ## :wastebasket: Itens de coleta
+## :package: Rode a API
 
-Os itens de coleta pré-cadastrados na aplicação são:
+```bash
+# Vá para a pasta backend-proffy e instale as dependências
+$ yarn install
 
-- Lâmpadas
-- Pilhas e baterias
-- Papéis e papelão
-- Resíduos eletrônicos
-- Resíduos orgânicos
-- Óleos de cozinha -->
+# Rode a aplicação
+$ yarn start
+```
+
+## 💻 Rode o projeto WEB
+
+```bash
+# Vá para a pasta frontend-proffy e instale as dependências
+$ yarn install
+
+# Rode a aplicação
+$ yarn start
+
+Acesse: http://localhost:3000/ para ver o resultado.
+```
+
+## :iphone: Rode o projeto Mobile
+
+Para rodar o projeto mobile você precisa de um celular com o [expo](https://play.google.com/store/apps/details?id=host.exp.exponent) instalado ou um emulador Android/iOS.
+
+```bash
+# Vá para a pasta mobile-proffy e instale as dependências
+$ yarn install
+
+# Rode a aplicação
+$ yarn start
+
+Depois leia o QRCode com o app do [expo](https://play.google.com/store/apps/details?id=host.exp.exponent) ou rode em um emulador.
+```
 
 ## 🔖 Layout
 
